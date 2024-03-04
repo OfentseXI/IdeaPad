@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #20b2aa;
+  color: #222222;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 30px auto;
+}
+
+img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+input {
+  color: #432000;
+  background-color: #dce1eb;
+  border: 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  margin: 10px 0;
+}
+
+button {
+  color: #fdfdfd;
+  background-color: #ac48;
+  border: 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+button:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul li {
+  font-size: 20px;
+  background-color: #dce1eb;
+  color: #222222;
+  padding: 15px;
+  border-radius: 10px;
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover {
+  background-color: #ff8164;
+  color: crimson;
+  cursor: pointer;
+}
+
+.animate-bulb {
+  animation: animateBulb 1s linear infinite;
+}
+
+@keyframes animateBulb {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 80%;
+  }
+  100% {
+    opacity: 20%;
+  }
+}
